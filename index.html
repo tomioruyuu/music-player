@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <title>Music Player</title>
+  </head>
+  <body>
+    <div class="main-content">
+      <!-- TASKBOAR -->
+      <div class="taskboar">
+        <header class="header">
+          <p class="header-title">Now playing:</p>
+          <p class="header__name-song">Hoa Cỏ Lau</p>
+        </header>
+        <div class="img-song">
+          <img src="./assets/img/img-1.avif" alt="" loading="lazy" />
+        </div>
+        <div class="controls">
+          <div class="controls__around-icon repeat-song__block controls-btn">
+            <i class="fa-solid fa-arrow-rotate-right repeat-song"></i>
+          </div>
+          <div class="controls__around-icon back-song__block controls-btn">
+            <i class="fa-solid fa-backward-step back-song"></i>
+          </div>
+          <div class="change-status">
+            <div class="pause-block">
+              <i class="fa-solid fa-pause pause-song"></i>
+            </div>
+            <div class="controls__around-icon--special play-block">
+              <i class="fa-solid fa-play play-song"></i>
+            </div>
+          </div>
+          <div class="controls__around-icon next-song__block controls-btn">
+            <i class="fa-solid fa-forward-step next-song"></i>
+          </div>
+          <div class="controls__around-icon random-song__block controls-btn">
+            <i class="fa-solid fa-shuffle random-song"></i>
+          </div>
+        </div>
+        <input
+          type="range"
+          name=""
+          id=""
+          class="slider"
+          value="0"
+          min="0"
+          step="1"
+          max="100"
+        />
+      </div>
+
+      <!-- LIST SONG -->
+      <div class="list-song"></div>
+    </div>
+  </body>
+  <script src="./assets/javascript/index.js"></script>
+</html>
